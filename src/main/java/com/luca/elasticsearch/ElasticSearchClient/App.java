@@ -17,7 +17,7 @@ import org.elasticsearch.transport.client.PreBuiltTransportClient;
  */
 public class App {
 	public static void main(String[] args) throws UnknownHostException {
-		Settings settings = Settings.builder().put("client.transport.sniff", true).put("cluster.name", "elasticsearch")
+		Settings settings = Settings.builder().put("client.transport.sniff", true).put("cluster.name", "lucacluster")
 				.build();
 		TransportAddress transportAddress = new TransportAddress(InetAddress.getByName("localhost"), 9300);
 		Client client = new PreBuiltTransportClient(settings).addTransportAddress(transportAddress);
